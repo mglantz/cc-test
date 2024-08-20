@@ -4,19 +4,13 @@ controller_inventories:
     description: network hackathon
 
 controller_credentials:
-  - credential_type: Machine
-    name: network 
-    description: network
-    inputs:
-      username: root
-      password: !vault |
-          $ANSIBLE_VAULT;1.1;AES256
-          62383135636664313939623661366164383132653338353739613837636333643234323662386337
-          3636333938653339613836643732643765653230646636390a393864313566393739613239313562
-          34633939306362616532326230373838393535626461363462323130633761653663613830393266
-          6536633630333037370a623361376566366430346137383864623130353837383565653961336563
-          3236
-
+- name: network
+  description: network
+  credential_type: Machine
+  inputs:
+    username: localuser
+    password: password
+    
 controller_templates:
   - name: Network - Challenge 1
     description: Grading for Network - Challenge 1
