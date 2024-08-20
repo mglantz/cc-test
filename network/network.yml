@@ -1,0 +1,14 @@
+---
+controller_templates:
+  - name: Network - Challenge 1
+    description: Grading for Network - Challenge 1
+    job_type: run
+    inventory: "network"
+    project: "cc-test"
+    playbook: workshops/network/network_challenge1.yml
+    verbosity: 0
+    credentials:
+      - "network"
+    extra_vars:
+      some_thing: "team5"
+...
