@@ -2,10 +2,12 @@
 controller_inventories:
   - name: network
     description: network hackathon
+    organization: 1
     
 controller_templates:
   - name: Network - Challenge 1
     description: Grading for Network - Challenge 1
+    organization: 1
     job_type: run
     inventory: "network"
     project: "cc-test"
