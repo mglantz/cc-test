@@ -2,14 +2,6 @@
 controller_inventories:
   - name: network
     description: network hackathon
-
-controller_credentials:
-- name: network
-  description: network
-  credential_type: Machine
-  inputs:
-    username: localuser
-    password: password
     
 controller_templates:
   - name: Network - Challenge 1
